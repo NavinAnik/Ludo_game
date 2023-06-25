@@ -1,0 +1,20 @@
+html, body{
+	padding: 0;
+	margin: 0;
+}
+
+.box-contrainer{
+	display: grid;
+
+	grid-template-rows:repeat(13, 50px) ;
+	grid-template-columns:repeat(5, 50px) ;
+
+	
+	justify-content: center;
+	align-content: center;
+
+}
+
+.box{
+	border: 1px solid;
+}
