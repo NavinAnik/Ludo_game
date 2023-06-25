@@ -40,11 +40,13 @@ html, body{
 .big_box_green{
 	grid-column: 1/7;
 	grid-row: 1/7;
+	box-sizing: border-box;
 }
 
 .big_box_yellow{
 	grid-column: 10/16;
 	grid-row:1/7 ;
+	box-sizing: border-box;
 }
 
 .medium_box{
@@ -78,6 +80,7 @@ html, body{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	box-sizing: border-box;
 }
 
 .innerBox{
@@ -94,6 +97,7 @@ html, body{
 	align-content: space-evenly;
 
 	background-color: rgb(256, 256, 256);
+	box-sizing: border-box;
 }
 
 .redBox{
@@ -120,4 +124,58 @@ html, body{
   border-radius: 50%;
   position: relative;
   background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
+}
+
+
+@media only screen and (min-width: 819px) {
+  .medium_box {
+	grid-column: 7/10;
+	grid-row:7/10 ;
+	float: left;
+	border-left: 75px solid green;
+	border-right: 75px solid blue;
+	border-top: 75px solid yellow;
+	border-bottom: 75px solid red;
+
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .medium_box {
+	grid-column: 7/10;
+	grid-row:7/10 ;
+	float: left;
+	border-left: 40px solid green;
+	border-right: 40px solid blue;
+	border-top: 61px solid yellow;
+	border-bottom: 60px solid red;
+
+  }
+
+  .box-contrainer{
+  	height: 70%;
+	width: 40%;
+  }
+
+.innerBox{
+	border: 1px solid;
+	height: 60%;
+	width: 60%;
+	display: grid;
+	grid-template-rows:repeat(2, 1fr) ;
+	grid-template-columns:repeat(2, 1fr) ;
+
+
+	
+	justify-content: space-evenly;
+	align-content: center;
+	align-items: center;
+	justify-items: center;
+}
+
+.inner .box{
+	height: 50%;
+	width:50%;
+}
+ 
 }
