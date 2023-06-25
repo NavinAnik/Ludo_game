@@ -17,6 +17,7 @@ html, body{
 
 .box{
 	border: 1px solid;
+	border-radius: 5%;
 }
 
 .big_box_green{
