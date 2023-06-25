@@ -31,6 +31,10 @@ html, body{
 .box{
 	border: 1px solid;
 	border-radius: 5%;
+	display: flex;
+	align-items: center;
+	justify-items: center;
+	justify-content: center;
 }
 
 .big_box_green{
@@ -106,4 +110,14 @@ html, body{
 
 .yellowBox{
 	background-color: yellow;
+}
+
+.ball {
+  display: inline-block;
+  width: 60%;
+  height: 60%;
+  margin: 0;
+  border-radius: 50%;
+  position: relative;
+  background: radial-gradient(circle at 50% 120%, #81e8f6, #76deef 10%, #055194 80%, #062745 100%);
 }
