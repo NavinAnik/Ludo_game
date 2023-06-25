@@ -3,15 +3,28 @@ html, body{
 	margin: 0;
 }
 
+.main{
+	height: 100vh;
+	width: 100vw;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	padding: 20px;
+}
+
 .box-contrainer{
+	height: 90%;
+	width: 50%;
 	display: grid;
 
-	grid-template-rows:repeat(15, 50px) ;
-	grid-template-columns:repeat(15, 50px) ;
+	grid-template-rows:repeat(15, 1fr) ;
+	grid-template-columns:repeat(15, 1fr) ;
 
 	
 	justify-content: center;
 	align-content: center;
+
 
 }
 
