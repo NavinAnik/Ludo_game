@@ -33,6 +33,11 @@ html, body{
 .medium_box{
 	grid-column: 7/10;
 	grid-row:7/10 ;
+	float: left;
+	border-left: 75px solid green;
+	border-right: 75px solid blue;
+	border-top: 75px solid yellow;
+	border-bottom: 75px solid red;
 }
 
 .big_box_red{
